@@ -1,0 +1,70 @@
+# csc299-project
+
+**Author:** Sulaiman Syed  
+**Date:** 2025-09-22
+
+This project explores how AI-coding assistants can help plan, specify, develop, and test a Python-based **Personal Knowledge and Task Management System (PKMS)**.  
+It features:
+- Terminal-based chat interface  
+- Knowledge + task management  
+- JSON/SQLite storage  
+- Optional AI agents  
+
+See `conversations/` for planning sessions and prototypes.
+
+
+**Getting Started** — 2025-09-22
+
+This project explores building a local, portable Personal Knowledge & Task Management System (PKMS + Task Manager) with:
+- JSON or SQLite state storage
+- terminal-based chat UI
+- pluggable AI agents (local rule-based + optional LLM adapters)
+- cross-platform Python support (Windows / macOS / Linux)
+
+## Goals
+1. Build an MVP CLI that can create/search notes and tasks.
+2. Add a simple agent framework that can run commands and log actions.
+3. Support two storage backends: JSON (MVP) and SQLite (+FTS).
+4. Save conversations with LLMs in `conversations/` and keep them under version control.
+5. Package the project so it can run via `python -m pkms.cli`.
+
+## Repo layout (starter)
+  csc299-project/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── pkms/                     # Main source code (Python package)
+│   ├── __init__.py
+│   ├── models.py
+│   ├── cli.py
+│   ├── agents.py
+│   ├── llm_adapter.py
+│   └── storage/
+│       ├── __init__.py
+│       ├── base.py
+│       ├── json_store.py
+│       └── sqlite_store.py
+│
+├── data/                     # Optional local JSON/SQLite data (gitignored)
+│
+├── tests/                    # Unit tests (pytest)
+│   └── test_storage.py
+│
+├── conversations/            # Saved chats with LLMs (for planning, ideas, prototypes)
+│   ├── 20250922-llm-ideas.md
+│   ├── 20250922-study-plan.md
+│   ├── 20250922-prototypes.md
+│   └── README.md
+│
+├── docs/                     # Documentation, diagrams, progress logs
+│   ├── design-overview.md
+│   ├── requirements.md
+│   └── timeline.md
+│
+├── examples/                 # Example data or sample scripts
+│   └── sample_data.json
+│
+├── requirements.txt          # Dependencies (optional)
+└── pyproject.toml            # Package config (if you use Poetry or build tools)
