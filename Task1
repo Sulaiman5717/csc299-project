@@ -1,0 +1,12 @@
+# Tasks1 Command-Line Task Manager
+
+This is a simple prototype command-line application for storing, listing, and searching tasks in a JSON file.
+
+## 📦 Setup
+
+Make sure you have **Python 3** installed.
+
+Clone the repository and navigate to the `tasks1` directory:
+```bash
+git clone https://github.com/YOUR_USERNAME/csc299-project.git
+cd csc299-project/tasks1
