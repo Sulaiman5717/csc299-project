@@ -31,6 +31,11 @@ This project explores building a local, portable Personal Knowledge & Task Manag
 ## Repo layout (starter)
   csc299-project/
 │
+├── tasks1/
+│   ├── tasks.py
+│   ├── tasks_data.json
+│   └── README.md
+│
 ├── README.md
 ├── LICENSE
 ├── .gitignore
