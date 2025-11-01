@@ -1,12 +1,25 @@
-# Tasks1 Command-Line Task Manager
+# 📝 Simple Task Manager (Command-Line App)
 
-This is a simple prototype command-line application for storing, listing, and searching tasks in a JSON file.
+This is a lightweight command-line Python app that lets you **add**, **list**, and **search** tasks — all stored locally in a JSON file.
 
-## 📦 Setup
+---
 
-Make sure you have **Python 3** installed.
+## ⚙️ Requirements
 
-Clone the repository and navigate to the `tasks1` directory:
-```bash
-git clone https://github.com/YOUR_USERNAME/csc299-project.git
-cd csc299-project/tasks1
+- Python **3.9+** (works with Python 3.13)
+- Works on macOS, Windows, and Linux
+- No external libraries required (only uses built-in Python modules)
+
+---
+
+## How to Run
+
+1. **Open the project in Visual Studio Code**  
+   - Go to `File → Open Folder` and select this project folder.
+
+2. **Open the terminal in VS Code**  
+   - Shortcut: <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) on Windows or <kbd>Cmd</kbd> + <kbd>`</kbd> on Mac.
+
+3. **Run the script using Python 3**
+   ```bash
+   python3 tasks.py [command] [arguments]
