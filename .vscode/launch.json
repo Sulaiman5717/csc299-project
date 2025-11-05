@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PKMS: web interface",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/web_app.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "PKMS: interactive menu (terminal)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/pkms_menu.py",
+      "console": "integratedTerminal",
+      "env": {
+        // Change this if you want a different data file
+        "JSON_PATH": "${workspaceFolder}/demo_tasks.json"
+      }
+    },
+    {
+      "name": "PKMS: list (root, JSON)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--storage", "json",
+        "--json-path", "${workspaceFolder}/demo_tasks.json",
+        "list"
+      ]
+    },
+    {
+      "name": "PKMS: list (csc299-project-1, JSON)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/csc299-project-1/main.py",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "args": [
+        "--storage", "json",
+        "--json-path", "${workspaceFolder}/csc299-project-1/demo_tasks.json",
+        "list"
+      ]
+    }
+  ]
+}
