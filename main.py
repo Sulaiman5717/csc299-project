@@ -190,12 +190,22 @@ def cmd_weekly_summary(args):
 
 # --- Main -------------------------------------------------------------------
 def main(argv: list[str] | None = None):
+    # If run without arguments, launch web interface
+    if argv is None:
+        import sys
+        if len(sys.argv) == 1:
+            print("No command provided. Launching web interface...")
+            print("(Use --help to see CLI commands)")
+            import subprocess
+            subprocess.run([sys.executable, "web_app.py"])
+            return 0
+    
     p = argparse.ArgumentParser(prog="pkms", description="AI-powered Task Manager (PKMS)")
     p.add_argument("--storage", choices=["sqlite", "json"], default="sqlite")
     p.add_argument("--db-path", default=None, help="path to SQLite DB (for --storage sqlite)")
     p.add_argument("--json-path", default=None, help="path to JSON file (for --storage json)")
 
-    sub = p.add_subparsers(dest="cmd", required=True)
+    sub = p.add_subparsers(dest="cmd", required=False)
 
     sp = sub.add_parser("add", help="add a new task")
     sp.add_argument("title")
@@ -231,7 +241,11 @@ def main(argv: list[str] | None = None):
     sp.set_defaults(func=cmd_weekly_summary)
 
     args = p.parse_args(argv)
-    args.func(args)
+    if hasattr(args, 'func'):
+        args.func(args)
+    else:
+        # No command provided, show help
+        p.print_help()
 
 
 if __name__ == "__main__":
