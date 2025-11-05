@@ -103,12 +103,12 @@ def open_browser():
     """Open the browser after a short delay."""
     import time
     time.sleep(1.5)
-    webbrowser.open("http://localhost:5000")
+    webbrowser.open("http://localhost:5001")
 
 
 if __name__ == "__main__":
     import threading
     threading.Thread(target=open_browser, daemon=True).start()
-    print("Starting PKMS web app at http://localhost:5000")
+    print("Starting PKMS web app at http://localhost:5001")
     print("Press Ctrl+C to stop")
-    app.run(debug=True, use_reloader=False)
+    app.run(debug=True, use_reloader=False, port=5001)
