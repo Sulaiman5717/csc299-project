@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Python Tips",
+        "content": "1. Use pathlib for file operations\\n2. Handle errors gracefully\\n3. Use virtual environments",
+        "tags": [
+            "python",
+            "tips",
+            "best-practices"
+        ],
+        "created_at": "2025-11-03T14:21:36.714774",
+        "updated_at": "2025-11-03T14:21:36.714805"
+    }
+]
