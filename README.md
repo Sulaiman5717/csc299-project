@@ -5,6 +5,9 @@ PKMS (Personal Knowledge & Task Management System) is a **Python-based command-l
 It integrates intelligent prioritization, goal tracking, and optional AI coaching to make personal organization simple and smart.
 
 ---
+## Youtube Video
+https://youtu.be/QUMSZWsYg1M
+---
 
 ## ⚡ Demo Mode Available!
 
