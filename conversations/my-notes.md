@@ -1,3 +1,29 @@
+# Prompt used to create this project
+
+User prompt (paraphrased):
+
+"Create a PKMS (Personal Knowledge & Task Management System) task management system that does the following:
+
+- Provide a terminal-first CLI and a responsive web UI for managing tasks and knowledge entries.
+- Support task CRUD with priorities, due dates, tags, categories, subtasks, recurring tasks, and status tracking (todo/in-progress/done).
+- Include a Personal Knowledge Management (PKM) module for notes, links, files, and references that can be linked to tasks.
+- Offer both lightweight JSON and SQLite storage backends, with easy migration between them.
+- Provide natural-language search and filtering across tasks and knowledge entries, plus smart suggestions powered by an AI assistant (prioritization, related knowledge, next actions).
+- Export/import (JSON/Markdown), backup and restore, and simple sync (file-based or optional cloud integration).
+- Ship with a small automated test suite (pytest), an installer/entrypoint (uv/Poetry), and CI config for linting and tests.
+- Include a minimal plugin/extension API and documentation, plus example scripts for automation (e.g., cron reminders, email/webhook integrations).
+
+Make it secure, modular, and well-documented. Keep the codebase easy to extend and test.
+
+(Additional optional niceties that can be included to make the prompt look complete)
+- Keyboard-first accessibility and Vim-style navigation in the terminal UI.
+- Kanban board view and calendar integration for due dates.
+- End-to-end encryption option for sensitive notes and tasks.
+- Simple REST API with token-based auth and webhooks for third-party automation.
+- Example data and seed scripts so the project looks populated on first run."
+
+---
+
 # AI Conversation Log - CSC299 Project
 
 ## Project Overview
