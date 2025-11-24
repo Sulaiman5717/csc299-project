@@ -51,7 +51,7 @@ The spec-kit framework (tasks5) introduced a more formal approach:
 - No data validation or error handling
 - No testing framework
 
-### Phase 2: Enhanced CLI with Knowledge Base (Tasks2)
+### Phase 2: Enhanced CLI with Knowledge Base
 
 **Approach**: Added a personal knowledge management system alongside task management, still as standalone scripts.
 
@@ -72,7 +72,7 @@ The spec-kit framework (tasks5) introduced a more formal approach:
 **Approach**: Rebuilt the project as a proper Python package using modern tools (`uv` for package management, `pytest` for testing).
 
 **Development Process**:
-1. **Package Initialization**: Used `uv init tasks3` to create proper package structure
+1. **Package Initialization**: Used `uv` to create proper package structure
 2. **Test-Driven Development**: Wrote tests first for core functionality
    - Created `tests/test_inc.py` for basic smoke tests
    - Added `tests/test_task_manager.py` with 6 comprehensive test cases
@@ -117,21 +117,6 @@ The spec-kit framework (tasks5) introduced a more formal approach:
 - Initially tried to make it a reusable component within the main PKMS, but decided a standalone experiment better fit the assignment requirements
 - First attempt used `gpt-3.5-turbo` but switched to `gpt-4o-mini` for better summary quality
 
-### Phase 5: Spec-Kit Framework (Tasks5)
-
-**Approach**: Used GitHub's spec-kit for specification-driven development of a tasks manager.
-
-**Development Process**:
-1. **Spec-Kit Installation**: Installed with `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git`
-2. **Separate Repository**: Created isolated git repository to avoid confusion with existing code
-3. **Project Initialization**: Ran `specify init tasks-manager --ai copilot` to generate project scaffold
-4. **Implementation**: Built task manager with spec-kit structure:
-   - Data models in `src/tasks_manager/task.py`
-   - Storage layer in `src/tasks_manager/store.py`
-   - CLI interface in `src/tasks_manager/__main__.py`
-5. **Testing**: Manually tested all CRUD operations
-6. **Integration**: Copied everything except `.git` folder to `tasks5/` in main repository
-
 **What Worked**:
 - Spec-kit provided excellent project scaffolding with `.github/agents/` for future AI-assisted workflows
 - Clear separation of concerns (models, storage, CLI)
@@ -167,12 +152,12 @@ The spec-kit framework (tasks5) introduced a more formal approach:
 
 ## Testing Strategy Evolution
 
-### Early Approach (Tasks1-2)
+### Early Approach
 - Manual testing only
 - No automated test suite
 - Bugs discovered by users (me) during actual use
 
-### Improved Approach (Tasks3)
+### Improved Approach
 - Test-Driven Development with pytest
 - Comprehensive test coverage for core functionality:
   ```python
@@ -288,7 +273,7 @@ The combination of GitHub Copilot for rapid prototyping, test-driven development
 **Total Development Time**: Approximately 3-4 weeks across multiple sessions
 **Final Stats**: 
 - 5 distinct task manager implementations
-- 20 commits to git repository
+- 30+ commits to git repository
 - 10+ automated tests
 - 3 different user interfaces (CLI, menu, web)
 - 2 storage backends (JSON, SQLite)
