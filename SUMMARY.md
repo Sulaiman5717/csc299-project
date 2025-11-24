@@ -288,7 +288,7 @@ The combination of GitHub Copilot for rapid prototyping, test-driven development
 **Total Development Time**: Approximately 3-4 weeks across multiple sessions
 **Final Stats**: 
 - 5 distinct task manager implementations
-- 40+ commits to git repository
+- 20 commits to git repository
 - 10+ automated tests
 - 3 different user interfaces (CLI, menu, web)
 - 2 storage backends (JSON, SQLite)
