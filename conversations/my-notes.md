@@ -14,12 +14,6 @@ User prompt (paraphrased):
 
 Make it secure, modular, and well-documented. Keep the codebase easy to extend and test.
 
-(Additional optional niceties that can be included to make the prompt look complete)
-- Keyboard-first accessibility and Vim-style navigation in the terminal UI.
-- Kanban board view and calendar integration for due dates.
-- End-to-end encryption option for sensitive notes and tasks.
-- Simple REST API with token-based auth and webhooks for third-party automation.
-- Example data and seed scripts so the project looks populated on first run."
 ## Project Overview
 This log documents the development of an AI-powered personal knowledge and task management system. The project includes:
 - Personal knowledge management system (PKMS)
