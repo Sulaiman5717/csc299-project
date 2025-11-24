@@ -1,5 +1,4 @@
-# Prompt used to create this project
-
+# AI Conversation Log - CSC299 Project
 User prompt (paraphrased):
 
 "Create a PKMS (Personal Knowledge & Task Management System) task management system that does the following:
@@ -21,11 +20,6 @@ Make it secure, modular, and well-documented. Keep the codebase easy to extend a
 - End-to-end encryption option for sensitive notes and tasks.
 - Simple REST API with token-based auth and webhooks for third-party automation.
 - Example data and seed scripts so the project looks populated on first run."
-
----
-
-# AI Conversation Log - CSC299 Project
-
 ## Project Overview
 This log documents the development of an AI-powered personal knowledge and task management system. The project includes:
 - Personal knowledge management system (PKMS)
